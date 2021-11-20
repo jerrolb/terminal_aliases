@@ -1,0 +1,69 @@
+alias gd='git diff'
+alias gdo='git diff origin'
+alias gds='git diff --staged'
+alias gdt='git difftool'
+alias gdts='git difftool --staged'
+
+alias gf='git fetch'
+alias gst='git status'
+
+alias gsh='git stash'
+alias gshp='git stash pop'
+alias gsha0='git stash apply stash@{0}'
+alias gsha1='git stash apply stash@{1}'
+alias gshl='git stash list'
+alias gshc='git stash clear'
+alias gshd0='git stash drop stash@{0}'
+alias gshd1='git stash drop stash@{1}'
+alias gshs0='git stash show -p stash@{0}'
+
+alias grbc='git rebase --continue'
+alias grba='git rebase --abort'
+
+alias gch='git checkout'
+alias gcha='git checkout .'
+alias gchb='git checkout -b'
+
+alias ga='git add'
+alias gaa='git add .'
+alias gap='git add -p'
+
+alias gb='git branch'
+alias gbm='git branch -m'
+alias gbd='git branch -d'
+alias gbD='git branch -D'
+
+alias gc='HUSKY_SKIP_HOOKS=1 git commit'
+alias gcm='HUSKY_SKIP_HOOKS=1 git commit -m'
+alias gcam='HUSKY_SKIP_HOOKS=1 git commit -am'
+
+alias gca='HUSKY_SKIP_HOOKS=1 git commit --amend'
+alias gcan='HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit'
+
+alias gps='HUSKY_SKIP_HOOKS=1 git push'
+alias gpsf='HUSKY_SKIP_HOOKS=1 git push -f'
+alias gpso='HUSKY_SKIP_HOOKS=1 git push origin'
+alias gpsfo='HUSKY_SKIP_HOOKS=1 git push -f origin'
+
+alias gpl='git pull'
+
+alias gget='git fetch origin dev && git rebase origin/dev'
+
+alias gl='git log'
+alias glo='git log --oneline'
+alias gla='git log -1 HEAD'
+
+alias gra='git reset HEAD --'
+alias grl='git reset HEAD^'
+
+alias gs='git show'
+
+alias ns='npm start'
+alias nr='npm run'
+alias bns='BROWSER=none npm start'
+
+alias jw='jest --watch'
+alias jc='jest --coverage'
+alias jwc='jest --watch --coverage'
+
+alias src='source ~/.zshrc'
