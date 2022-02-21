@@ -33,10 +33,6 @@ alias gbm='git branch -m'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
 
-alias gr='git remote'
-alias grso='git remote show origin'
-alias grao='git remote add origin'
-
 alias gc='git commit'
 alias gcm='git commit -m'
 alias gcam='git commit -am'
@@ -60,14 +56,30 @@ alias gla='git log -1 HEAD'
 alias gra='git reset HEAD --'
 alias grl='git reset HEAD^'
 
+alias gr='git remote'
+alias grso='git remote show origin'
+alias grao='git remote add origin'
+
 alias gs='git show'
+
+alias gbs='git bisect start'
+alias gbr='git bisect reset'
+alias gbg='git bisect good'
+alias gbb='git bisect bad'
 
 alias ns='npm start'
 alias nr='npm run'
 alias bns='BROWSER=none npm start'
 
+alias src='source ~/.zshrc'
+
+alias cdc='cd /Users/jerrolbrooks/dev/contacts-ui'
+alias cds='cd /Users/jerrolbrooks/dev/nextiva-connect-spa'
+
+alias oi='open /Users/jerrolbrooks/dev/contacts-ui/coverage/lcov-report/index.js.html'
+
 alias jw='jest --watch'
 alias jc='jest --coverage'
 alias jwc='jest --watch --coverage'
 
-alias src='source ~/.zshrc'
+alias watch="(node /Users/jerrolbrooks/dev/devtools/index.js -w --tab='SPA 3000' --path=/Users/jerrolbrooks/dev/contacts-ui/src)"
