@@ -33,17 +33,21 @@ alias gbm='git branch -m'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
 
-alias gc='HUSKY_SKIP_HOOKS=1 git commit'
-alias gcm='HUSKY_SKIP_HOOKS=1 git commit -m'
-alias gcam='HUSKY_SKIP_HOOKS=1 git commit -am'
+alias gr='git remote'
+alias grso='git remote show origin'
+alias grao='git remote add origin'
 
-alias gca='HUSKY_SKIP_HOOKS=1 git commit --amend'
-alias gcan='HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gcam='git commit -am'
 
-alias gps='HUSKY_SKIP_HOOKS=1 git push'
-alias gpsf='HUSKY_SKIP_HOOKS=1 git push -f'
-alias gpso='HUSKY_SKIP_HOOKS=1 git push origin'
-alias gpsfo='HUSKY_SKIP_HOOKS=1 git push -f origin'
+alias gca='git commit --amend'
+alias gcan='git commit --amend --no-edit'
+
+alias gps='git push'
+alias gpsf='git push -f'
+alias gpso='git push origin'
+alias gpsfo='git push -f origin'
 
 alias gpl='git pull'
 
