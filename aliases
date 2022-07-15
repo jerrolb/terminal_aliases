@@ -32,6 +32,8 @@ alias grbi='git rebase -i'
 alias gch='git checkout'
 alias gcha='git checkout .'
 alias gchb='git checkout -b'
+alias gcho='git checkout --ours'
+alias gcht='git checkout --theirs'
 
 alias ga='git add'
 alias gaa='git add .'
@@ -53,15 +55,18 @@ alias gps='git push'
 alias gpsf='git push -force-with-lease'
 alias gpso='git push origin'
 alias gpsfo='git push --force-with-lease origin'
+alias gpsoh='git push origin HEAD'
+alias gpsfoh='git push --force-with-lease origin HEAD'
 
 alias gpl='git pull'
 alias gplo='git pull origin'
 
-alias gget='git fetch origin dev && git rebase origin/dev'
-
 alias gl='git log'
 alias glo='git log --oneline'
+alias glg='git log --graph'
+alias glog='git log --oneline --graph'
 alias gla='git log -1 HEAD'
+alias glf='git log --follow'
 
 alias gra='git reset HEAD --'
 alias grl='git reset HEAD^'
@@ -81,6 +86,12 @@ alias gbb='git bisect bad'
 alias gmb='git merge-base'
 alias gy='git apply'
 
+alias gcl='git clean'
+alias gcln='git clean -nd'
+alias gclf='git clean -fd'
+
+alias gcp='git cherry-pick'
+
 # NPM
 alias npms='npm start'
 alias npmr='npm run'
@@ -92,10 +103,6 @@ alias npmcv='npm cache verify'
 alias npmcvf='npm cache verify -force'
 alias npmis='npm install --save-dev'
 alias npmi='npm install'
-
-alias gcl='git clean'
-alias gcln='git clean -nd'
-alias gclf='git clean -fd'
 
 # Jest
 alias jw='jest --watch'
